@@ -1,0 +1,153 @@
+.hero{
+    background-image: url('../img/gifs/vibez.gif');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 5%;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-inscription{
+    background-color: #80976C;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    border: solid #80976C;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    z-index: 3;
+}
+
+.btn-inscription a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn-inscription:hover{
+    background: none;
+    border: solid white 2px;
+}
+
+.citation{
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    position: relative;
+}
+
+.quotes{
+    position: absolute;
+    font-size: 5rem;
+    top:-5px;
+    left:-80px;
+    color: #552456;
+}
+
+.citation p{
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.credit div:nth-child(2){
+    color: #80A06C;
+}
+
+.section-FAQ{
+    background-color: #80A06C;
+    color:white;
+}
+
+.ligne{
+    height:1px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.editions-precedentes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.editions-precedentes .resume{
+    display: flex;
+    width:400px;
+    background-color: #3D5B33;
+    color: #8AB073;
+    padding: 15px;
+    align-items: center;
+    text-align: center;
+}
+
+img{
+    width:400px;
+}
+
+.adresse-container{
+    display: flex;
+    gap:1rem;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.adresse div:nth-child(1){
+    font-weight: bold;
+}
+
+.map iframe {
+    border-radius: 15px;
+}
+
+.section-deplacement{
+    background: linear-gradient(180deg,rgba(142, 103, 134, 1) 0%, rgba(110, 116, 106, 1) 50%, rgba(141, 155, 136, 1) 100%);
+    color: white;
+}
+
+.section-deplacement span{
+    font-weight: bold;
+}
+
+.section-deplacement h4{
+    color:#D6E4CD;
+}
+
+@media (max-width: 900px) {
+    .citation p{
+        font-size: 1.2rem;
+    }
+    .map iframe{
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px){
+    .quotes{
+    font-size: 3rem;
+    top:-5px;
+    left:-20px;
+    }
+
+    .editions-precedentes .resume{
+    width:300px;
+    padding: 15px;
+    }
+
+    img{
+        width:200px;
+    }
+
+    .resume p{
+        font-size: 10px;
+    }
+
+    .map iframe {
+    max-width: 100%;
+    overflow: hidden;
+}
+}

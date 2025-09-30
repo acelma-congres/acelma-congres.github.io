@@ -1,0 +1,113 @@
+:root {
+    --primary-purple: #4A244A;
+    --primary-green: #7D9575;
+    --dark-green-text: #3D5B33;
+    --off-white: #F9F9F9;
+}
+
+.hero {
+    background-color: var(--primary-purple);
+    padding: 60px 5%;
+    color: white;
+}
+
+.conferences-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.conference {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem 0;
+    border-bottom: 2px solid #ddd;
+}
+
+.conference:last-child {
+    border-bottom: none; 
+}
+
+.conference.reverse {
+    flex-direction: row-reverse;
+}
+
+.conference-image,
+.conference-details {
+    flex: 1; 
+}
+
+.conference-image {
+    position: relative;
+    background-color: #d8d8d8; 
+    aspect-ratio: 16 / 10; 
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.conference-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 15px; 
+}
+
+.horaire-tag {
+    position: absolute;
+    top: -15px; 
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 30px;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.horaire-green {
+    background-color: var(--dark-green-text);
+}
+
+.horaire-purple {
+    background-color: var(--primary-purple);
+}
+
+.conference-details h3 {
+    color: var(--primary-purple);
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.conference-details p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    color: #555;
+}
+
+@media (max-width: 900px) {
+    .conference,
+    .conference.reverse {
+        flex-direction: column; 
+        gap: 2rem;
+        padding: 2.5rem 0;
+    }
+
+    .conference-details {
+        text-align: center; 
+    }
+    .conference-image {
+    max-width: 100%;
+    overflow:visible;
+    }
+}
+
+@media (max-width: 600px){
+    .conference-image {
+    max-width: 100%;
+    overflow:visible;
+    }
+}

@@ -1,0 +1,304 @@
+header {
+    background-color:#552456 ;
+    color: white;
+    padding: 10px;
+    font-family: "Inter", sans-serif;
+}
+
+header a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header img{
+  width:100px;
+}
+
+.menu {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+  .header-responsive, .menu-responsive{
+    display: none;
+  }
+
+
+header ul, footer ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+}
+
+.flag {
+  width: 30px;
+  cursor :pointer;
+  padding: 10px;
+}
+
+.flag:hover{
+  background-color:#602961 ;
+  border-radius: 3px;
+}
+
+.language-switch{
+  position: relative;
+}
+
+
+.languages-container{
+  position: absolute;
+  background-color: #ffffff;
+  color: rgb(29, 28, 28);
+  z-index: 3;
+  right:-3px;
+  border-radius: 3px;
+  display: none;
+
+}
+
+.languages-container.active{
+  display: block;
+}
+
+.language{
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.language:hover{
+    background-color: #e8e7e7;
+
+}
+
+body{
+    padding:0;
+    margin:0;
+    min-height: 100vh;
+    font-family: "Figtree", sans-serif ;
+}
+
+.hero{
+    background-image: url('../img/gifs/about.gif');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 5%;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65); /* Adjust opacity (0.4) if needed */
+    z-index: 2;
+}
+
+
+.hero .hero-text {
+    position: relative;
+    z-index: 3;
+}
+
+.hero-text{
+    top: 50%;
+    left: 0%;
+    color: white;
+}
+
+h1{
+  font-size: 90px;
+}
+
+h2{
+  font-size: 70px;
+}
+
+h3{
+  font-size: 30px;
+}
+
+h4{
+  font-size: 25px;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+section{
+  padding: 20px 20px 20px 20px;
+}
+
+footer {
+  background-color:#552456;
+  color: white;
+}
+
+footer h4{
+  padding: 0;
+  margin: 0;
+}
+
+footer span{
+    color: #80976C;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap:1rem;
+}
+
+
+.logo-block img{
+  width: 15em;
+}
+.logo-block{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-icon{
+  display: flex;
+  gap:0.5rem;
+}
+
+.reseaux{
+  padding-top: 20px;
+}
+
+.reseaux-icon{
+  display: flex;
+  padding-top: 20px;
+  gap: 1.5rem;
+}
+
+.reseaux-icon i{
+  background-color: white;
+  padding:10px 12px;
+  border-radius: 50%;
+  color: black;
+}
+
+.reseaux-icon i:hover{
+  background-color:#80976C;
+  color: #c9d5bf;
+}
+
+.menu-block{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+@media (max-width: 820px){
+  .hero h3{
+  font-size: 1rem;
+  }
+  
+  .footer-container {
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap:3rem;
+
+
+}
+.footer-block,.menu-block,.reseaux{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+}
+
+@media (max-width: 600px){
+  .hero h1{
+  font-size: 40px;
+  }
+  .menu li{
+    font-size: 10px;
+  }
+  .menu{
+    display: none;
+  }
+  .header-responsive{
+    display: block;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .header-responsive i{
+    font-size: 2rem;
+    color:white;
+  }
+
+  .btn-burger{
+    cursor: pointer;
+  }
+
+  .menu-responsive {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #552456;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+    z-index:1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size:1.5rem;
+    color: #FFFDF3;
+  }
+
+  .menu-responsive.active {
+    transform: translateX(0);
+  }
+
+  .menu-responsive li{
+      padding-bottom: 30px;
+  }
+
+  .closing-cross-nav{
+    position: absolute;
+      padding:10px;
+      color: white;
+      top:0;
+      right:0;
+      font-size: 2rem;
+      cursor: pointer;
+  }
+
+
+
+}
+

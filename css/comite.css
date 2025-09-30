@@ -1,0 +1,92 @@
+:root {
+    --primary-purple: #4A244A;
+    --primary-green: #7D9575;
+    --dark-green-text: #3D5B33;
+    --off-white: #F9F9F9;
+}
+
+body {
+    background-color: var(--off-white);
+    font-family: sans-serif;
+    color: #333;
+}
+
+.hero{
+    background-image: url('../img/gifs/team.webp');
+    background-size: cover;
+    background-position: center;
+
+    padding: 60px 5%;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.section-resume-comite{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.section-resume-comite .resume{
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: #3D5B33;
+    color: #E9F0E5;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.img{
+    border-radius: 15px;
+    width: 100%;
+}
+.portrait-comite{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.membre{
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;  
+    gap: 3rem;
+}
+
+.membre .img{
+    flex: 1;
+}
+
+.membre .resume{
+    flex: 1;
+}
+
+.resume h3{
+    color:#3D5B33;
+    font-size: 1.5em;
+}
+
+.resume h4{
+    color:#7D9575;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.membre.reverse {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 900px) {
+    .membre,
+    .membre.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+}
